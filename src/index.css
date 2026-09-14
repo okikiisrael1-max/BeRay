@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Sora", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-ink: #070809;
+  --color-charcoal: #141414;
+  --color-paper: #f7f4ea;
+  --color-surface: #fffdf5;
+  --color-coral: #fff200;
+  --color-teal: #22c6b8;
+  --color-amber: #f5b400;
+
+  --max-width-content: 72rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(255, 242, 0, 0.1), transparent 28rem),
+    #f7f4ea;
+  color: #070809;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Sora", sans-serif;
+}
+
+::selection {
+  background-color: #fff200;
+  color: #070809;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
